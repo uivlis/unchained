@@ -14,7 +14,7 @@ type Outputs = Record<string, any>
 export = async (): Promise<Outputs> => {
   const name = 'unchained'
   const outputs: Outputs = {}
-  const asset = 'ethereum'
+  const asset = 'ethereum-ropsten'
 
   const { kubeconfig, config, namespace } = await getConfig()
   const { cluster } = config
